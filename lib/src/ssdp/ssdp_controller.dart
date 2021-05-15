@@ -69,7 +69,7 @@ class SSDPController {
         targetAddress,
         _port,
         reuseAddress: true,
-        reusePort: true,
+        reusePort: false,
         ttl: 255,
       );
       socket.multicastLoopback = false;
