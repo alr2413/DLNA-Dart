@@ -11,7 +11,7 @@ dependencies:
     sdk: flutter
 
   connectivity: ^3.0.3
-  xml2json: ^5.0.0
+  xml2json: ^4.2.0
   shared_preferences: ^2.0.5
 
 dev_dependencies:
