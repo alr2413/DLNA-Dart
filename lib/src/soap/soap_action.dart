@@ -52,11 +52,6 @@ abstract class AbsDLNAAction<T> {
       result.httpContent = await response.transform(utf8.decoder).join();
       result.success =
           (response.statusCode == HttpStatus.ok && result.httpContent != null);
-      developer.log(
-        'Hungpv:Loging',
-        name: 'soap_action_dart.start.57',
-        error: jsonEncode(result),
-      );
     } catch (e) {
       result.success = false;
       result.errorMessage = e.toString();
