@@ -41,7 +41,10 @@ class VideoObject extends DIDLObject {
 }
 
 class AudioObject extends DIDLObject {
+
+  //  Http url link
   static const String AUDIO_MPEGURL = 'http-get:*:audio/mpegurl:*';
+  static const String AUDIO_X_MPEGURL = 'http-get:*:audio/x-mpegurl:*';
   static const String AUDIO_WAV = 'http-get:*:audio/wav:*';
   static const String AUDIO_L16 = 'http-get:*:audio/l16:AUDIO*';
   static const String AUDIO_MP3 = 'http-get:*:audio/mp3:*';
@@ -54,6 +57,9 @@ class AudioObject extends DIDLObject {
   static const String AUDIO_X_FLAC = 'http-get:*:audio/x-flac:*';
   static const String AUDIO_X_APE = 'http-get:*:audio/x-ape:*';
   static const String AUDIO_X_MATROSKA = 'http-get:*:audio/x-matroska:*';
+
+  // Local flie
+  static const String AUDIO_M3U_FILE_LOCAL = 'internal:*:audio/mpegurl:*';
 
   AudioObject(String title, String url, String protocol) {
     this.title = title;
